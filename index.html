@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Your Website</title>
+  <title>Bootstrap portfolio</title>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -11,28 +11,60 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <!-- Custom CSS for body background image -->
   <style>
+  body, html {
+  height: 100%;
+  margin: 0;
+}
     body {
       position: relative;
-      margin: 0;
       padding: 0;
-      height: 100vh;
       overflow: hidden;
       background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('your-background-image.jpg'); /* Specify the path or URL to your background image */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
+     
+.container-fluid {
+  display: flex;
+  height: 100%;
+}
 
-    .glass-layer {
-      position: relative;
-      z-index: 1;
-      background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2)); /* White gradient with transparency */
-      padding: 20px;
-    }
+.sidebar {
+  width: 20%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)); /* Black gradient with transparency */
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
 
-    .sidebar {
-      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)); /* Black gradient with transparency */
-      color: white;
+.glass-layer {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+  padding: 20px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 12px; /* Adjust the font size for the menu letters */
+}
+
+.rounded-circle img {
+  width: 100%; /* Make the image inside the rounded circle fill the circle */
+}
+
+.rounded-circle {
+  width: 60px; /* Adjust the width of the rounded circle */
+  height: 60px; /* Adjust the height of the rounded circle */
+}
+
+.content {
+  flex: 1;
+  overflow: auto;
+  padding: 20px;
+  /* Add any additional styles for your content */
+}
+
     }
   </style>
 </head>
