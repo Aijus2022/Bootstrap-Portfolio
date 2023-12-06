@@ -1,1 +1,13 @@
+body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+			background-color:rgba(237,57,322,0.8);
+        }
 
+        header {
+			background-image:url("C:\Users\vivaa\Downloads\theatre.jpg");
+            background-color:#rgba(234;456;223;0.4);
+            color: white;
+            padding: 20px;            
+        }
