@@ -11,44 +11,86 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <!-- Custom CSS for body background image -->
   <style>
-  body, html {
-  height: 100%;
-  margin: 0;
-}
-    body {
-      position: relative;
-      padding: 10px;
-      overflow:auto;
-      background-color: rgba((133, 20, 133, 0.1), rgba(225, 10,120, 0.5)); 
-      background-image:url('images/luca-bravo-a_hPPrncGlQ-unsplash.jpg'); 
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-     
-    header {color:white;
-           background-color: rgba(133, 20, 133, 0.1);
-           width:100%;
-           margin-top:20px;
-           padding:20px;
-           }
-     
-.container-fluid {
- display: flex; 
- height: 100%;
- width:100%;
- padding:20 px; 
- margin: 20px;
+  body {
+  width: 100%; /* Sets the width to 100% of the viewport */
+  box-sizing: border-box; /* Include padding and border in the total width and height */
+  background: url('images/luca-bravo-a_hPPrncGlQ-unsplash.jpg') no-repeat center center fixed;
+  background-size: cover; /* This property ensures that the background image covers the entire body */
 }
 
-.sidebar { 
-  width: 150px; 
-  padding-left:5px; /* Adjust padding as needed */
-  padding-top:20px;
-  height:100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)); /* Black gradient with transparency */
-  color: white;
-  display: flex;
-  flex-direction: column;
+    @media screen and (min-width: 600px) {
+  /* For Tablets */
+  body {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+//For Laptops
+    body {
+        width: 738px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+//For Large Laptops
+    body {
+        width: 962px;
+    }
+}
+  h1,h2,h3,h4,p { font-family: Arial, sans-serif;
+		     color:white;
+   
+        }
+
+        header {
+            background-color:rgba(345,45,123,0.2);
+            color: white;
+            padding: 20px;            
+        }     
+			
+
+        .header-content {
+            margin-top: 20px;
+			text-align:center;
+        }
+
+        nav {
+            margin-top: 20px;
+	 text-decoration-line: underline;
+  text-decoration-color: rgba(345,105,306,0.5);   	
+			 
+        }
+
+
+        nav a {
+            margin-right:20px;
+            color: white;
+            text-decoration: none;
+        }
+        
+.sidebar {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 80%);
+   
+}
+
+.sidebar a {
+    color: #3498db; /* contrasting color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out; /* smooth color transition on hover */
+
+    /* Additional styles for better visibility */
+
+    padding: 20px;
+    margin-bottom: 0; /* Ensure no bottom margin */
+    flex: 0 0 200px; 
+    position:relative;	
+}
+.container-fluid {
+display: flex;
+  background-color: rgba(234, 23, 35, 0.2);
+  margin: auto;
+  position: relative; 
 }
 
 
@@ -78,13 +120,23 @@
   padding: 20px; 
   height:100%;
 }
-   .mt-4:{width:100%;
-          padding:0px;
-          margin:10px;
-          max-height:70px;
-          background-color: rgba(133, 20, 133, 0.9);
-          color:rgba(183,34,189,0.8};
-h4,p{color:white}
+ p {
+    margin: 10px 0; /*for better spacing */
+    color: rgba (22,34,345,0.8); /* text color */
+    font-size: 16px; 
+    text-align: center; /* Center-align the text */
+}
+
+
+        footer {
+            background-color: rgba(234,345,123,0.3);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom:0;
+            width:100%;
+        }
     
   </style>
 </head>
