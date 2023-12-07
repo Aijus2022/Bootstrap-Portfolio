@@ -12,7 +12,7 @@ Features
 Mirror Glass Effect: The website features a modern and visually appealing mirror glass effect using a combination of linear gradients, border-radius, and pseudo-elements.
 
 Responsive Design: The use of Bootstrap ensures that the website is fully responsive, adapting to different screen sizes and devices.
-Screenshots of the website on diffrent devices are inclided in the images folder of the project's repository.
+Screenshots of the website on diffrent devices are inclided in the images folder of the project's repository. Links to the screenshots:on ipad:images/Screenshot_2023-12-07-10-18-25-01_40deb401b9ffe8e1df2f1cc5ba480b12.jpg,on phone:
 How to Run
 Clone the repository:
 
