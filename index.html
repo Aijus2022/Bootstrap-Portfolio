@@ -60,12 +60,11 @@
   width: 170px; /* Adjusts the width of the rounded circle */
   height: 170px; /* Adjusts the height of the rounded circle */
 }
-
 .content {
   flex: 1;
   overflow: auto;
   padding: 20px; 
-  min-width:*)%;
+  min-width:100%;
 }
 
     }
@@ -110,46 +109,43 @@
           </div>
         </nav>
       </header>
-   <div class="container-fluid d-flex">
-    <!-- Side panel -->
-    <div class="sidebar p-4">
-
-        <!-- Vertical nav with social icons -->
+     <div class="container-fluid d-flex flex-column min-vh-100">
+    <!-- Sidebar and Content Row -->
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3 sidebar p-4">
+           <!-- Vertical nav with social icons -->
 <nav>
                <!-- Social icons -->
-          <li class="nav-item mt-4">
-            <h5>Social</h5>
+         <ul>
+          <li class="nav-item mt-4">            
             <a href="#" class="nav-link text-white"><i class="fab fa-facebook"></i> Facebook</a>
             <a href="#" class="nav-link text-white"><i class="fab fa-twitter"></i> Twitter</a>
-            <a href="#" class="nav-link text-white"><i class="fab fa-linkedin"></i> LinkedIn</a>
-           
+            <a href="#" class="nav-link text-white"><i class="fab fa-linkedin"></i> LinkedIn</a>           
           </li>
         </ul>
       </nav>
-
       <!-- Project links -->
       <div class="mt-auto">
         <h5 class="mt-4">Projects</h5>
         <ul class="list-unstyled">
           <li><a href="#">Project 1</a></li>
           <li><a href="#">Project 2</a></li>
-          <li><a href="#">Project 3</a></li>
+          <li><a href="#">Project 3</a></li> 
+          <li><a href="#">Project 4</a></li>     
+                   
          
         </ul>
-      </div>
-
-      <div class="mt-4">
-        <p>&copy; 2023Aijamal Jusupova | All rights reserved.</p>
-      </div>
-    </div>
+      </div>     
      
-   
+   <div class="col-md-9 content p-4">
   
-    <!-- Jumbotron with grid of four cards -->
+    <!-- Jumbotron  -->
     <div class="jumbotron jumbotron-fluid text-white" style="background-image: url('images/background.gif'); background-size: cover;">
       <div class="container text-center">
         <h1 class="display-4"> My First Website</h1>
         <p class="lead">.</p>
+        <div>
 
         <!-- Grid of four cards -->
         <div class="row">
@@ -188,12 +184,11 @@
         </div>
       </div>
     </div>
-     <div class="mt-4">
-        <p>&copy; 2023Aijamal Jusupova | All rights reserved.</p>
-      </div>
-  </div>
-
-  <!-- Bootstrap JS and dependencies -->
+     <!-- Footer -->
+  <footer class="mt-4">
+    <p>&copy; 2023 Aijamal Jusupova | All rights reserved.</p>
+  </footer>
+   <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -201,9 +196,4 @@
 </body>
 </html>
 
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</body>
-</html>
+ 
