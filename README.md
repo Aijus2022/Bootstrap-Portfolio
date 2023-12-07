@@ -1,2 +1,30 @@
 # Bootstrap-Portfolio
-My front developer portfolio which showcases my projects in web development using Bootstrap CSS
+My front developer portfolio which showcases my projects in web development using Bootstrap CSS and incorporates a custom theme that aligns with my personal style and preferences.
+
+Overview
+This portfolio serves as a showcase of my skills, projects, and experiences. It is designed to provide visitors with an insight into my background, expertise, and the work I've done. The website is responsive, ensuring a seamless experience across various devices.
+
+Technologies Used
+Bootstrap
+HTML
+CSS
+Features
+Mirror Glass Effect: The website features a modern and visually appealing mirror glass effect using a combination of linear gradients, border-radius, and pseudo-elements.
+
+Responsive Design: The use of Bootstrap ensures that the website is fully responsive, adapting to different screen sizes and devices.
+
+How to Run
+Clone the repository:
+
+git clone https://github.com/your-username/your-portfolio.git
+Open the index.html file in your web browser.
+
+Customization
+Feel free to customize the website to match your personal brand. You can modify the content, add or remove sections, and update the styling to better suit your preferences.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+screenshots on different screen sizes are provided in the repository.
+Acknowledgments
+Bootstrap: https://getbootstrap.com/
+Icons: Font Awesome
