@@ -70,7 +70,7 @@
     }
   </style>
 </head>
-<body> 
+<body>  <div class="container-fluid d-flex flex-column min-vh-100">
       <!-- Header with rounded small icon, text, and horizontal nav -->
       <header class="glass-layer">
         <div class="d-flex align-items-center">
@@ -109,14 +109,15 @@
           </div>
         </nav>
       </header>
-     <div class="container-fluid d-flex flex-column min-vh-100">
-    <!-- Sidebar and Content Row -->
-    <div class="row">
+      <!-- Main content -->
+    <div class="row flex-grow-1">
       <!-- Sidebar -->
       <div class="col-md-3 sidebar p-4">
-           <!-- Vertical nav with social icons -->
-<nav>
-               <!-- Social icons -->
+        <!-- Your sidebar content -->
+        <div class="row">
+          <!-- Sidebar -->
+          <div class="col-md-3 sidebar p-4">
+               <!-- Vertical nav with social icons -->
         
           <li class="nav-item mt-4">            
             <a href="#" class="nav-link text-white"><i class="fab fa-facebook"></i> Facebook</a>
@@ -138,9 +139,14 @@
       </div>
     </div>
      
- <!-- Main Content -->
-<div class="col-md-9 content p-4">
-  <!-- Jumbotron with Image -->
+  </div>   
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-md-9 content p-4">
+        <!-- Jumbotron, cards, and other content go here -->
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <!-- Image -->
@@ -252,6 +258,7 @@
   <footer class="mt-4">
     <p>&copy; 2023 Aijamal Jusupova | All rights reserved.</p>
   </footer>
+</div>
    <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
