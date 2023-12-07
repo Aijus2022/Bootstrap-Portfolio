@@ -23,17 +23,20 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      background-attachment: fixed; /* This is what makes the background image rescale based on the container’s size */ background-size: cover
     }
      
 .container-fluid {
  display: flex; 
  height: 100vh; /* viewport height to ensure the container spans the entire height */
  width:100vh;
+ padding:0 px; 
+  margin: 0px;
 }
 
 .sidebar { 
   width: 200px; /* Set a maximum width if needed */
-  padding: 15px; /* Adjust padding as needed */
+  padding: 5px; /* Adjust padding as needed */
   height:100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)); /* Black gradient with transparency */
   color: white;
@@ -46,7 +49,7 @@
   position: relative;
   z-index: 1;
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7)); /* More transparent background */
-  padding: 10px; /* Smaller padding for a smaller header height */
+  padding: 5px; /* Smaller padding for a smaller header height */
 }
 
 
@@ -65,8 +68,8 @@
 .col-md-9 content p-4 {
   flex:1;
   overflow: auto;
-  padding: 10px; 
-  width:80%;
+  padding: 5px; 
+  width:100%;
 }
 
     }
