@@ -30,7 +30,9 @@
     }
     header {color:white;
             background-color: rgba(133, 20, 133, 0.1);
-            width:100%;}
+            width:100%;
+           margin:0;
+           padding:0}
      
 .container-fluid {
  display: flex; 
@@ -42,7 +44,8 @@
 
 .sidebar { 
   width: 150px; 
-  padding: 5px; /* Adjust padding as needed */
+  padding-left:5px; /* Adjust padding as needed */
+  padding-top:5px;
   height:100%;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)); /* Black gradient with transparency */
   color: white;
@@ -54,7 +57,7 @@
  .glass-layer {
   position: relative;
   z-index: 1;
-  background: linear-gradient(rgba(155, 25, 155, 0.1), rgba(205, 35, 195, 0.5)); /* More transparent background */
+  background: linear-gradient(rgba(205, 25, 195, 0.6), rgba(125, 35, 125, 0.2)); /* More transparent background */
   padding: 5px; /* Smaller padding for a smaller header height */
 }
 
@@ -74,13 +77,15 @@
 .col-md-9 content p-4 {
   flex:1;
   overflow: auto;
-  padding: 5px; 
+  padding-top: 5px; 
   height:100%;
 }
    .mt-4:{width:100%;
-            max-height:80px;
-            background: rgba(133, 20, 133, 0.9);
-            color:white}
+          padding:0px;
+          margin:0px;
+          max-height:100px;
+          background: rgba(133, 20, 133, 0.9);
+          color:white}
 
     
   </style>
@@ -151,7 +156,7 @@
 <div class="col-md-10 content p-4">       
   <div class="jumbotron jumbotron-fluid">
     <div class="container-fluid ">     
-      <img src='images/Leonardo_Diffusion_XL_A_modern_Kyrgyz_short_haired_woman_sitt_1.jpg' class='img-fluid'>
+      <img src='C:\Users\vivaa\Downloads\background.gif' class='img-fluid'>
       <!-- Heading and text -->
       <h1 class="display-4">Hello, world!</h1>
       <p class="lead">This is my web developer portfolio.</p>
