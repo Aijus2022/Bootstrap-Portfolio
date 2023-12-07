@@ -19,11 +19,13 @@
       position: relative;
       padding: 0;
       overflow:auto;
-      133, 20, 133, 0.1, rgba(225, 10,120, 0.5)), url('images/luca-bravo-a_hPPrncGlQ-unsplash.jpg'); /* background image */
+      background-color:133, 20, 133, 0.1, rgba(225, 10,120, 0.5)), url('images/luca-bravo-a_hPPrncGlQ-unsplash.jpg'); /* background image */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-attachment: fixed; /* This is what makes the background image rescale based on the container’s size */ background-size: cover
+      background-attachment: fixed;
+      z-index:0;
+      /* This is what makes the background image rescale based on the container’s size */ background-size: cover
     }
     header {color:white;
             background-color:133, 20, 133, 0.1
@@ -31,16 +33,14 @@
      
 .container-fluid {
  display: flex; 
- justify content:center;
- align items:center;
- height: 100%; /* viewport height to ensure the container spans the entire height */
+ height: 100%;
  width:100%;
  padding:0 px; 
  margin: 0px;
 }
 
 .sidebar { 
-  width: 200px; /* Set a maximum width if needed */
+  width: 150px; 
   padding: 5px; /* Adjust padding as needed */
   height:100%;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)); /* Black gradient with transparency */
@@ -78,7 +78,7 @@
 }
     footer:{width:100%;
             height:100px;
-            background-color:133, 20, 133, 0.1;
+            background-color:133, 20, 133, 0.9;
             color:white}
 
     
@@ -86,7 +86,7 @@
 </head>
 <body>  
   <div class="container-fluid d-flex flex-column min-vh-100">
-      <!-- Header with rounded small icon, text, and horizontal nav -->
+     <!-- Header with rounded small icon, text, and horizontal nav -->
       <header class="glass-layer">
         <div class="d-flex align-items-center">
           <!-- Rounded small icon (profile picture) -->
@@ -125,7 +125,7 @@
         </nav>
       </header>
        <div class="row flex-grow-1">
-      <div class="col-md-3 sidebar p-4">       
+      <div class="col-md-2 sidebar p-4">       
         <div class="row">                     
         <div class="social-icons mt-4">
         <a href="#" class="text-white mr-2"><i class="fab fa-facebook"></i></a>
@@ -147,7 +147,7 @@
        </div>
       </div>
          <!-- Main Content -->
-<div class="col-md-9 content p-4">       
+<div class="col-md-10 content p-4">       
   <div class="jumbotron jumbotron-fluid">
     <div class="container">     
       <img src='images/Leonardo_Diffusion_XL_A_modern_Kyrgyz_short_haired_woman_sitt_1.jpg' class='img-fluid'>
