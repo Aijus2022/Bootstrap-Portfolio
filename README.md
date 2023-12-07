@@ -12,11 +12,11 @@ Features
 Mirror Glass Effect: The website features a modern and visually appealing mirror glass effect using a combination of linear gradients, border-radius, and pseudo-elements.
 
 Responsive Design: The use of Bootstrap ensures that the website is fully responsive, adapting to different screen sizes and devices.
-
+Screenshots of the website on diffrent devices are inclided in the images folder of the project's repository.
 How to Run
 Clone the repository:
 
-git clone https://github.com/your-username/your-portfolio.git
+git clone (https://aijus2022.github.io/Bootstrap-Portfolio/)
 Open the index.html file in your web browser.
 
 Customization
