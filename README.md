@@ -17,7 +17,7 @@ Screenshots of the website on diffrent devices are inclided in the images folder
 How to Run
 Clone the repository:https://github.com/Aijus2022/Bootstrap-Portfolio/edit/main/
 
-git clone (https://aijus2022.github.io/Bootstrap-Portfolio/)
+git clone https://aijus2022.github.io/Bootstrap-Portfolio/
 Open the index.html file in your web browser.
 
 Customization
