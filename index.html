@@ -181,35 +181,35 @@ display: flex;
   
  }
 /* Neon Glowing Effect */
-    @keyframes neonGlow {
-      0% {
-        border-color: #00fff9;
-        box-shadow: 0 0 10px #00fff9, 0 0 20px #00fff9, 0 0 30px #00fff9;
-      }
-      50% {
-        border-color: #00fff9;
-        box-shadow: 0 0 20px #00fff9, 0 0 30px #00fff9, 0 0 40px #00fff9;
-      }
-      100% {
-        border-color: #00fff9;
-        box-shadow: 0 0 10px #00fff9, 0 0 20px #00fff9, 0 0 30px #00fff9;
-      }
-    }
+@keyframes neonGlow {
+  0% {
+    border-color: #ff00fb; /* Very bright pinkish-blue neon color */
+    box-shadow: 0 0 15px #ff00fb, 0 0 30px #ff00fb, 0 0 45px #ff00fb;
+  }
+  50% {
+    border-color: #ff00fb; /* Very bright pinkish-blue neon color */
+    box-shadow: 0 0 30px #ff00fb, 0 0 45px #ff00fb, 0 0 60px #ff00fb;
+  }
+  100% {
+    border-color: #ff00fb; /* Very bright pinkish-blue neon color */
+    box-shadow: 0 0 15px #ff00fb, 0 0 30px #ff00fb, 0 0 45px #ff00fb;
+  }
+}
 
-    /* H1 Border Styles */
-    .card h1 {
-      border: 5px solid transparent; /* Set initial border */
-      padding: 10px;
-      display: inline-block; /* Ensure inline-block for the border to take effect */
-      margin-bottom: 15px; /* Adjust margin as needed */
-      transition: border-color 0.3s ease; /* Add transition for smooth effect */
-    }
+/* H1 Border Styles */
+.card h1 {
+  border: 10px solid transparent; /* Set initial border with increased thickness */
+  padding: 10px;
+  display: inline-block; /* Ensure inline-block for the border to take effect */
+  margin-bottom: 15px; /* Adjust margin as needed */
+  transition: border-color 0.3s ease; /* Add transition for smooth effect */
+}
 
-    /* Apply neon glow animation on hover */
-    .card h1:hover {
-      animation: neonGlow 1.5s linear infinite; /* Apply the neon glow animation */
-    }		 
-    
+/* Apply neon glow animation */
+.card h1:hover {
+  animation: neonGlow 1.5s linear infinite; /* Apply the neon glow animation on hover */
+}
+
   </style>
 </head>
 <body>  
