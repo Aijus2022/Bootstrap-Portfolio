@@ -28,10 +28,11 @@
 .container-fluid {
  display: flex; 
  height: 100vh; /* viewport height to ensure the container spans the entire height */
+  width:100%;
 }
 
 .sidebar {
-  width: 25%;
+  width: 20%;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)); /* Black gradient with transparency */
   color: white;
   display: flex;
@@ -56,8 +57,8 @@
 }
 
 .rounded-circle {
-  width: 60px; /* Adjusts the width of the rounded circle */
-  height: 60px; /* Adjusts the height of the rounded circle */
+  width: 170px; /* Adjusts the width of the rounded circle */
+  height: 170px; /* Adjusts the height of the rounded circle */
 }
 
 .content {
@@ -70,11 +71,7 @@
     }
   </style>
 </head>
-<body>
-
-  <div class="container-fluid d-flex">
-    <!-- Side panel -->
-    <div class="sidebar p-4">
+<body> 
       <!-- Header with rounded small icon, text, and horizontal nav -->
       <header class="glass-layer">
         <div class="d-flex align-items-center">
@@ -113,6 +110,9 @@
           </div>
         </nav>
       </header>
+   <div class="container-fluid d-flex">
+    <!-- Side panel -->
+    <div class="sidebar p-4">
 
         <!-- Vertical nav with social icons -->
 <nav>
@@ -122,7 +122,7 @@
             <a href="#" class="nav-link text-white"><i class="fab fa-facebook"></i> Facebook</a>
             <a href="#" class="nav-link text-white"><i class="fab fa-twitter"></i> Twitter</a>
             <a href="#" class="nav-link text-white"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <!-- Add more social icons as needed -->
+           
           </li>
         </ul>
       </nav>
@@ -134,7 +134,7 @@
           <li><a href="#">Project 1</a></li>
           <li><a href="#">Project 2</a></li>
           <li><a href="#">Project 3</a></li>
-          <!-- Add more project links as needed -->
+         
         </ul>
       </div>
 
