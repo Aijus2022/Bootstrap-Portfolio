@@ -125,7 +125,7 @@
         
 .sidebar {
   background: linear-gradient(45deg, #ff7e9b, #8ac2f8);
-  opacity: 0.5;
+  opacity: 0.8;
   height:100%;
   margin-btoom:0px;
 }
@@ -137,7 +137,7 @@
   neon-text:
     color: #e91e63; /* Pinkish-blue neon color */
     text-shadow: 2px 2px 5px rgba(145, 255, 255, 0.8); /* Light blue shadow */
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 18px; /* Adjust the font size as needed */
     font-weight: bold; /* Optionally make the text bold */
     letter-spacing: 2px; /* Adjust letter spacing for a neon effect */
     text-decoration: none;
@@ -185,29 +185,10 @@ display: flex;
     font-size: 16px; 
     text-align: center; /* Center-align the text */
 }
-.jumbotron {
-      background-color: rgba(123,34,200,0.3); 
-    }
-	    /* Adjustments for responsive jumbotron */
-.jumbotron img {
-  max-width: 100%;
-  height: auto;
-}
-.text-container {
-  max-width: 600px; /* Adjust as needed */
-  margin: 0 auto; /* Center the container horizontally */
-}
-
-.jumbotron .container-fluid {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
 
 @media (max-width: 575.98px) {
   /* Styles for extra small devices (phones) */
-  .jumbotron .container-fluid {
+  .jumbotron {
     max-width: 100%;
     margin-right: 8px; /* Add a small margin to the right on smaller screens */
   }
@@ -217,35 +198,32 @@ display: flex;
     max-width:100%;
   }
 }
-
-
-    .jumbotron h1 {
-      color: #007bff; /* Blue color for the title */
-      font-size: 4rem; /* Adjust the title font size */
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* a subtle text shadow */
+   .jumbotron {
+      position: relative;
+      background: url('images/background.gif') center center;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px; /* Adjust padding as needed */
+      margin-bottom: 20px; /* Add some margin between jumbotron and other content */
     }
 
-    .jumbotron p {
-      color: #007bff; /* Blue color for the text */
-      font-size: 1.5rem; /* Adjust the text font size */
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /*a subtle text shadow */
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 80%; /* Adjust as needed */
+      max-height: 80%; /* Adjust as needed */
     }
 
-    /* Creates mirrored glass effect using text-stroke */
-    .mirror-glass {
-      color: transparent;
-      -webkit-text-stroke: 1px #007bff;}
-
-        .mt-4 {
-            background-color: rgba(background: linear-gradient(45deg, #ff7e9b, #8ac2f8);
-  opacity: 0.8; );
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom:0;
-            width:100%;
-        }.
+    .text-overlay h1,
+    .text-overlay p {
+      font-size: 2vw; /* Responsive font size based on viewport width */
+      margin: 0; /* Remove default margins */
+      padding: 10px; /* Add padding to ensure text stays inside */
+    }
+    
 	 .card-text {
       color: rgba:(124,134,345,0.8); /* text color */
       font-size: 16px; 
@@ -372,19 +350,13 @@ background-color:background: linear-gradient(45deg, #ff7e9b, #8ac2f8);
            
  <!-- Main Content -->
 <div class="col-md-10 content p-4">       
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container-fluid">
-      <img src="images\background.gif" class="img-fluid" alt="Background Image">
-      <!-- Heading and text -->
-	  <div class="text-container">  
-      <h1 class="display-4">Hello, world!</h1>
-      <p class="lead">This is my web developer portfolio.</p>
+  <div class="jumbotron">
+        <!-- Heading and text -->
+	  <div class="neon-text">  
+      <h1>Hello, world!</h1>
+      <p>This is my web developer portfolio.</p>
     </div>
     </div>
-  </div> <!-- Closing tag for jumbotron -->
-
-
-
   <!-- Bootstrap Cards Grid -->
   <div class="row">
     <!-- Card 1 -->
