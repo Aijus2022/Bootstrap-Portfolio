@@ -242,10 +242,8 @@ background-color:background: linear-gradient(45deg, #ff7e9b, #8ac2f8);
 /* Apply neon glow animation */
 .card h1:hover {
   animation: neonGlow 1.5s linear infinite; /* Apply the neon glow animation on hover */
-footer {    padding: 20px; 
-	    position: relative;  
-            background: linear-gradient(rgba(205, 25, 195, 0.5), rgba(125, 35, 125, 0.1)); /* More transparent background */}
-	#contact {background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+.footer {   padding: 20px; 
+	    position: relative;            
 		 }
            
 
@@ -255,51 +253,54 @@ footer {    padding: 20px;
 <body>  
   <div class="container-fluid d-flex flex-column min-vh-100">
      <!-- Header with rounded small icon, text, and horizontal nav -->
-    <header>
+   <!-- Header with rounded small icon, text, and horizontal nav -->
+<header>
     <div class="container">
         <!-- First Row -->
         <div class="row">
             <!-- Image column -->
-            <div class="col-md-4 mt-4 ml-0">
+            <div class="col-md-3 mt-4">
                 <div class="rounded-circle bg-light" style="width: 160px; height: 160px; overflow: hidden;">
                     <img src="images/Leonardo_Diffusion_XL_A_modern_Kyrgyz_short_haired_woman_sitt_1.jpg" alt="Profile Picture" class="img-fluid">
                 </div>
             </div>
-        </div>      
 
-       <!-- Header text column -->
-<div class="col-md-8 mt-4">
-    <div class="header-content">
-        <!-- Apply a linear gradient to the text background -->
-        <h2 class="header-text" style="background: linear-gradient(to right, #ff7e9b, #8ac2f8); -webkit-background-clip: text; color: transparent;">Aijamal Jusupova</h2>
-        <h3 class="header-text" style="background: linear-gradient(to right, #ff7e9b, #8ac2f8); -webkit-background-clip: text; color: transparent;">Frontend Developer</h3>
-    </div>
+            <!-- Header text column -->
+            <div class="col-md-5 mt-4">
+                <div class="header-content">
+                    <!-- Apply a linear gradient to the text background -->
+                    <h2 class="header-text" style="background: linear-gradient(to right, #ff7e9b, #8ac2f8); -webkit-background-clip: text; color: transparent;">Aijamal Jusupova</h2>
+                    <h3 class="header-text" style="background: linear-gradient(to right, #ff7e9b, #8ac2f8); -webkit-background-clip: text; color: transparent;">Frontend Developer</h3>
+                </div>
+            </div>
+
             <!-- Horizontal navigation bar -->
-      <nav class="navbar navbar-expand-lg navbar-dark mt-4 col-md-4">
-            <!-- Navigation content goes here --> 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://aijus2022.github.io/my-new-projects/">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://aijus2022.github.io/Florist-store-website">Featured Website</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact">Contact</a>
-              </li>
-            </ul>
-         </div>
-      </nav>
+            <nav class="navbar navbar-expand-lg navbar-dark mt-4 col-md-4">
+                <!-- Navigation content goes here -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://aijus2022.github.io/my-new-projects/">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://aijus2022.github.io/Florist-store-website">Featured Website</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </div>
-  </div>
-</header>	
+</header>
+
        <div class="row flex-grow-1">
       <div class="col-md-2 sidebar p-4">       
         <div class="row">                     
@@ -400,46 +401,13 @@ footer {    padding: 20px;
   </div> <!-- Closing tag for row -->
 </div> <!-- Closing tag for main content -->
      <!-- Footer -->
-<!-- Navigation bar -->
-<nav class="navbar navbar-expand-lg navbar-dark mt-3 col-md-12">
-    <!-- Navigation content goes here -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://aijus2022.github.io/my-new-projects/">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://aijus2022.github.io/Florist-store-website">Featured Website</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<!-- Footer -->
-<footer class="mt-4">
-    <div class="footer-text" style="background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-        <p>
-            &copy; 2023 Aijamal Jusupova | All rights reserved.
-        </p>
-    </div>
-
+<footer class="mt-4 footer">
     <!-- Content section with the Contact id -->
-    <div id="contact">
+    <div id="contact" class="header-text">
       <p>Website created by Aijamal Jusupova</p>
-       <p>Follow me on <a href="https://www.linkedin.com/in/aleph-zero-310b93241/" target="_blank" rel="noopener">LinkedIn</a> | Connect on <a href="https://linkedin.com/in/example" target="_blank" rel="noopener">LinkedIn</a></p>
+      <p>Follow me on <a href="https://www.linkedin.com/in/aleph-zero-310b93241/" target="_blank" rel="noopener">LinkedIn</a> | Connect on <a href="https://linkedin.com/in/example" target="_blank" rel="noopener">LinkedIn</a></p>
     </div>
 </footer>
-
-
 
 </div>
    <!-- Bootstrap JS and dependencies -->
