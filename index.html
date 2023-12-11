@@ -135,6 +135,32 @@ display: flex;
 .jumbotron {
       background-color: rgba(123,34,200,0.3); 
     }
+	    /* Adjustments for responsive jumbotron */
+.jumbotron img {
+  max-width: 100%;
+  height: auto;
+}
+
+.jumbotron .container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 575.98px) {
+  /* Styles for extra small devices (phones) */
+  .jumbotron .container-fluid {
+    max-width: 100%;
+    margin-right: 8px; /* Add a small margin to the right on smaller screens */
+  }
+
+  .jumbotron img {
+    max-height: 100%; /* Ensure the image does not overflow vertically */
+    max-width:100%;
+  }
+}
+
 
     .jumbotron h1 {
       color: #007bff; /* Blue color for the title */
@@ -292,18 +318,21 @@ footer {color: white;
         </div>   
        </div>
       </div>
-     </div>
+       </div>
 
-         <!-- Main Content -->
+           
+ <!-- Main Content -->
 <div class="col-md-10 content p-4">       
   <div class="jumbotron jumbotron-fluid">
-    <div class="container">     
-      <img src="images\background.gif" class="img">
+    <div class="container-fluid">
+      <img src="images\background.gif" class="img-fluid" alt="Background Image">
       <!-- Heading and text -->
       <h1 class="display-4">Hello, world!</h1>
       <p class="lead">This is my web developer portfolio.</p>
     </div>
   </div> <!-- Closing tag for jumbotron -->
+</div>
+
 
   <!-- Bootstrap Cards Grid -->
   <div class="row">
@@ -370,20 +399,46 @@ footer {color: white;
   </div> <!-- Closing tag for row -->
 </div> <!-- Closing tag for main content -->
      <!-- Footer -->
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-dark mt-3 col-md-12">
+    <!-- Navigation content goes here -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://aijus2022.github.io/my-new-projects/">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://aijus2022.github.io/Florist-store-website">Featured Website</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Footer -->
 <footer class="mt-4">
-    <div class="footer-text" style="
-    background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;>
-
-
-        <p>&copy; 2023 Aijamal Jusupova | All rights reserved.
-            <a href="#contact"> 
-                <p> get in touch via admin@aijusdigital.co.uk </p>
-            </a>
+    <div class="footer-text" style="background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+        <p>
+            &copy; 2023 Aijamal Jusupova | All rights reserved.
         </p>
     </div>
+
+    <!-- Content section with the Contact id -->
+    <div id="contact">
+        <!-- contact content here -->
+        <p>Contact me via email:vivaaija@gmail.com</p>
+    </div>
 </footer>
+
+
 
 </div>
    <!-- Bootstrap JS and dependencies -->
