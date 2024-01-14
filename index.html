@@ -232,75 +232,79 @@ float: left !important;
       margin-bottom: 20px; /* Add some margin between jumbotron and other content */
     }
 
-    .text-overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      max-width: 80%; /* Adjust as needed */
-      max-height: 80%; /* Adjust as needed */
-    }
+  .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%; /* Adjust as needed */
+  max-height: 80%; /* Adjust as needed */
+}
 
-    .text-overlay h1,
-    .text-overlay p {
-      font-size: 2vw; /* Responsive font size based on viewport width */
-      margin: 0; /* Remove default margins */
-      padding: 10px; /* Add padding to ensure text stays inside */
-    }
-    
-	 .card-text {
-      color: rgba:(124,134,345,0.8); /* text color */
-      font-size: 16px; 
-	.card-title {
-      color: blue; /* title color */
-      font-size: 20px; /* title font size */
-      font-weight: bold; /* font weight */
-     
-    }
- 
- .card{
-    display:inline-block;
-    margin:0 2px;
-background-color:background: linear-gradient(45deg, #ff7e9b, #8ac2f8);
-  opacity: 0.5;  
-  }
-  
- }
+.text-overlay h1,
+.text-overlay p {
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  margin: 0; /* Remove default margins */
+  padding: 10px; /* Add padding to ensure text stays inside */
+}
+
+.card-text {
+  color: rgba(124, 134, 345, 0.8); /* text color */
+  font-size: 16px;
+  max-height: 100px; /* Set the maximum height for the card text container */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds the max height */
+}
+
+.card-title {
+  color: blue; /* title color */
+  font-size: 20px; /* title font size */
+  font-weight: bold; /* font weight */
+}
+
+.card {
+  display: inline-block;
+  margin: 0 2px;
+  background: linear-gradient(45deg, #ff7e9b, #8ac2f8);
+  opacity: 0.5;
+}
+
 /* Neon Glowing Effect */
 @keyframes neonGlow {
   0% {
-    border-color: #ff00fb; /* Very bright pinkish-blue neon color */
+    border-color: #ff00fb;
     box-shadow: 0 0 15px #ff00fb, 0 0 30px #ff00fb, 0 0 45px #ff00fb;
   }
   50% {
-    border-color: #ff00fb; /* Very bright pinkish-blue neon color */
+    border-color: #ff00fb;
     box-shadow: 0 0 30px #ff00fb, 0 0 45px #ff00fb, 0 0 60px #ff00fb;
   }
   100% {
-    border-color: #ff00fb; /* Very bright pinkish-blue neon color */
+    border-color: #ff00fb;
     box-shadow: 0 0 15px #ff00fb, 0 0 30px #ff00fb, 0 0 45px #ff00fb;
   }
 }
 
 /* H1 Border Styles */
 .card h1 {
-  border: 10px solid transparent; /* Set initial border with increased thickness */
+  border: 10px solid transparent;
   padding: 10px;
-  display: inline-block; /* Ensure inline-block for the border to take effect */
-  margin-bottom: 15px; /* Adjust margin as needed */
-  transition: border-color 0.3s ease; /* Add transition for smooth effect */
+  display: inline-block;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
 }
 
 /* Apply neon glow animation */
 .card h1:hover {
-  animation: neonGlow 1.5s linear infinite; /* Apply the neon glow animation on hover */
+  animation: neonGlow 1.5s linear infinite;
 }
-           .footer{ background-color:rgba(234,23,235,08);
 
-            color: white;
-            padding: 20px;       
-	    width:100%;
-        }
+.footer {
+  background-color: rgba(234, 23, 235, 0.8);
+  color: white;
+  padding: 20px;
+  width: 100%;
+}
+
            
 
 	
