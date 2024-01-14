@@ -249,24 +249,28 @@ float: left !important;
 }
 
 .card-text {
-  color: rgba(124, 134, 345, 0.8); /* text color */
+  color: rgba(124, 134, 345, 0.8);
   font-size: 16px;
   max-height: 100px; /* Set the maximum height for the card text container */
   overflow-y: auto; /* Enable vertical scrolling if content exceeds the max height */
+  padding: 10px; /* Add padding to ensure text stays inside */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
 }
 
 .card-title {
-  color: blue; /* title color */
-  font-size: 20px; /* title font size */
-  font-weight: bold; /* font weight */
+  margin-bottom: 10px;
 }
 
 .card {
-  display: inline-block;
-  margin: 0 2px;
-  background: linear-gradient(45deg, #ff7e9b, #8ac2f8);
-  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure the card takes up the full height */
 }
+
 
 /* Neon Glowing Effect */
 @keyframes neonGlow {
